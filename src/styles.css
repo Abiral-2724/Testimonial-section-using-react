@@ -1,0 +1,139 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc; /* Use the desired background color, here it's set to light gray (#ccc) */
+}
+.container {
+  text-align: center;
+}
+.heading {
+  font-size: 2.25rem; /* Equivalent to text-4xl in typical configurations */
+  font-weight: bold;
+}
+.heading-underline {
+  background-color: #8b5cf6; /* bg-violet-400 color */
+  height: 4px;
+  width: 20%; /* 1/5 of the parent width */
+  margin-top: 1rem; /* Adjust the top margin as needed */
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Ensures the underline is centered within the parent element */
+}
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .card-wrapper {
+    position: relative;
+  }
+}
+.card-image {
+  position: absolute;
+  top: -7rem;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.image {
+  width: 140px;
+  height: 140px;
+  margin-top: 30px;
+  margin-left: -450px;
+  aspect-ratio: 1/1; /* Maintains a square aspect ratio (width equals height) */
+  border-radius: 50%; /* Makes the image a rounded circle */
+  z-index: 25; /* Sets the stacking order of the element */
+}
+.card-paragraph {
+  text-align: center;
+  margin-top: 1.75rem; /* Equivalent to 7 times 0.25rem (assuming 1rem = 16px) */
+}
+.paragraph-name {
+  font-weight: bold;
+  font-size: 1.5rem; /* Equivalent to text-2xl in typical configurations */
+  text-transform: capitalize;
+  line-height: 1.125; /* Equivalent to leading-3, assuming 1rem = 16px */
+}
+.card-job {
+  text-align: center;
+  margin-top: -1rem; /* Equivalent to 4 times 0.25rem (assuming 1rem = 16px) */
+}
+.job-paragraph {
+  color: #8b5cf6; /* text-violet-300 color */
+  font-size: 0.875rem; /* Equivalent to text-sm in typical configurations */
+  text-transform: uppercase;
+}
+.card-text {
+  text-align: center;
+  margin-top: 1rem; /* Equivalent to 4 times 0.25rem (assuming 1rem = 16px) */
+  color: #71717f; /* text-slate-500 color */
+}
+
+.left {
+  color: #8b5cf6; /* text-violet-400 color */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.25rem; /* Equivalent to 5 times 0.25rem (assuming 1rem = 16px) */
+}
+.right {
+  color: #8b5cf6; /* text-violet-400 color */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.25rem; /* Equivalent to 5 times 0.25rem (assuming 1rem = 16px) */
+}
+.image-div {
+  margin-top: 26px;
+  margin-left: -300px;
+  width: 140px;
+  height: 140px;
+  background-color: #666075; /* bg-violet-500 color */
+  border-radius: 50%; /* Makes the div a rounded circle */
+  position: absolute;
+  top: -6px;
+  z-index: -10;
+  left: 10px;
+}
+.card-button-1 {
+  font-size: 25px;
+  border: none;
+  background-color: white;
+  color: black;
+}
+.card-button-suprise {
+  background-color: black;
+  font: bold;
+  color: white;
+  margin-top: 10px;
+  height: 40px;
+  width: 100px;
+  border-radius: 4px;
+}
+.testimorial-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  height: 400px;
+  max-width: 700px; /* Set maximum width for larger screens */
+  background-color: #ffffff; /* bg-white color */
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem; /* Equivalent to 10 times 0.25rem (assuming 1rem = 16px) */
+  padding: 1.25rem; /* Equivalent to 10 times 0.125rem (assuming 1rem = 16px) */
+  transition: all 0.7s ease; /* Smooth transition effect over 0.7 seconds */
+  border-radius: 0.375rem; /* Equivalent to rounded-md in some CSS frameworks */
+}
+
+.testimonial-wrapper:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2); /* Hover shadow effect */
+}
